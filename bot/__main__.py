@@ -91,7 +91,7 @@ def getHerokuDetails(h_api_key, h_app_name):
 
 
 
-IMAGE_X = "https://telegra.ph/file/9c2c7250397f4ed2eed20.jpg"
+IMAGE_X = "https://telegra.ph/file/c9645b71e825c217732f4.jpg"
 
 def stats(update, context):
     if ospath.exists('.git'):
