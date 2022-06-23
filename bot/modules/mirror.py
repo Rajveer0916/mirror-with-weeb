@@ -195,13 +195,13 @@ class MirrorListener:
     def onUploadComplete(self, link: str, size, files, folders, typ, name: str):
         if not self.isPrivate and INCOMPLETE_TASK_NOTIFIER and DB_URI is not None:
             DbManger().rm_complete_task(self.message.link)
-        msg = f"<b>╭🗂️ Name: </b><code>{escape(name)}</code>\n<b>├📐 Size: </b>{size}"
+        msg = f"<b>╭ Name: </b><code>{escape(name)}</code>\n<b>├📐 Size: </b>{size}"
         if self.isLeech:
-            msg += f'\n<b>├📚 Total Files: </b>{folders}'
+            msg += f'\n<b>├ Total Files: </b>{folders}'
             if typ != 0:
-                msg += f'\n<b>├💀 Corrupted Files: </b>{typ}'
-            msg += f'\n<b>├⌛ It Tooks:</b> {get_readable_time(time() - self.message.date.timestamp())}'
-            msg += f'\n<b>╰👤 cc: </b>{self.tag}\n'
+                msg += f'\n<b>├ Corrupted Files: </b>{typ}'
+            msg += f'\n<b>├ It Tooks:</b> {get_readable_time(time() - self.message.date.timestamp())}'
+            msg += f'\n<b>╰ cc: </b>{self.tag}\n'
             if not files:
                 sendMessage(msg, self.bot, self.message)
             else:
@@ -215,12 +215,12 @@ class MirrorListener:
                 if fmsg != '':
                     sendMessage(msg + fmsg, self.bot, self.message)
         else:
-            msg += f'\n<b>├📦 Type: </b>{typ}'
+            msg += f'\n<b>├ Type: </b>{typ}'
             if ospath.isdir(f'{DOWNLOAD_DIR}{self.uid}/{name}'):
-                msg += f'\n<b>├🗃️ SubFolders: </b>{folders}'
-                msg += f'\n<b>├🗂️ Files: </b>{files}'
-            msg += f'\n<b>├⌛ It Tooks:</b> {get_readable_time(time() - self.message.date.timestamp())}'
-            msg += f'\n<b>╰👤 cc: </b>{self.tag}'
+                msg += f'\n<b>├ SubFolders: </b>{folders}'
+                msg += f'\n<b>├ Files: </b>{files}'
+            msg += f'\n<b>├ It Tooks:</b> {get_readable_time(time() - self.message.date.timestamp())}'
+            msg += f'\n<b>╰ cc: </b>{self.tag}'
             buttons = ButtonMaker()
             link = short_url(link)
             buttons.buildbutton("☁️ Drive Link", link)
