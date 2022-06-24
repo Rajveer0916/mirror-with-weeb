@@ -42,15 +42,15 @@ class MirrorStatus:
     STATUS_SEEDING = "Seeding...🌧"
 
 class EngineStatus:
-    STATUS_ARIA = "Aria2c v1.35.0"
-    STATUS_GD = "Google Api v2.51.0"
-    STATUS_MEGA = "MegaSDK v3.12.0"
-    STATUS_QB = "qBittorrent v4.3.9"
+    STATUS_ARIA = "<b>Aria2c v1.35.0</b>"
+    STATUS_GD = "<b>Google Api v2.51.0</b>"
+    STATUS_MEGA = "<b>MegaSDK v3.12.0</b>"
+    STATUS_QB = "<b>qBittorrent v4.3.9</b>"
     STATUS_TG = "<b>Pyrogram v2.0.27</b>"
-    STATUS_YT = "YT-dlp v22.5.18"
-    STATUS_EXT = "Extract | pExtract"
-    STATUS_SPLIT = "FFmpeg v2.9.1"
-    STATUS_ZIP = "p7zip v16.02"
+    STATUS_YT = "<b>YT-dlp v22.5.18</b>"
+    STATUS_EXT = "<b>Extract | pExtract</b>"
+    STATUS_SPLIT = "<b>FFmpeg v2.9.1</b>"
+    STATUS_ZIP = "<b>p7zip v16.02</b>"
 
 PROGRESS_MAX_SIZE = 100 // 9
 PROGRESS_INCOMPLETE = ['◔', '◔', '◑', '◑', '◑', '◕', '◕']
