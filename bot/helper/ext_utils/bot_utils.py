@@ -46,7 +46,7 @@ class EngineStatus:
     STATUS_GD = "Google Api v2.51.0"
     STATUS_MEGA = "MegaSDK v3.12.0"
     STATUS_QB = "qBittorrent v4.3.9"
-    STATUS_TG = "Pyrogram v2.0.27"
+    STATUS_TG = "<b>Pyrogram v2.0.27</b>"
     STATUS_YT = "YT-dlp v22.5.18"
     STATUS_EXT = "Extract | pExtract"
     STATUS_SPLIT = "FFmpeg v2.9.1"
@@ -133,7 +133,7 @@ def get_progress_bar_string(status):
     if cPart >= 0:
         p_str += PROGRESS_INCOMPLETE[cPart]
     p_str += '○' * (PROGRESS_MAX_SIZE - cFull)
-    p_str = f"<b>├</b>[{p_str}]"
+    p_str = f"<b>├</b> [{p_str}]"
     return p_str
 
 def get_readable_message():
