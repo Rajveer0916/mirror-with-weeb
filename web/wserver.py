@@ -753,7 +753,7 @@ def set_priority(hash_id):
 
 @app.route('/')
 def homepage():
-    return "<h1>See mirror-with-weeb <a href='https://github.com/codewithweeb/mirror-with-weeb'>@GitHub</a> By <a href='https://github.com/codewithweeb'>Code With Weeb</a></h1>"
+    return "<h1>See mirror-with-Ajay <a href='https://github.com/'>@GitHub</a> By <a href='https://github.com/'>Code With Weeb</a></h1>"
 
 @app.errorhandler(NotFound404Error)
 def page_not_found(e):
