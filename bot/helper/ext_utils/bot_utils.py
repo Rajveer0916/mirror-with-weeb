@@ -175,7 +175,6 @@ def get_readable_message():
                 msg += f"\n<b>├ Elapsed: </b>{get_readable_time(time() - download.message.date.timestamp())}"
                 msg += f"\n<b>├ Engine :</b> {download.eng()}"
                 msg += f"\n<b>├ User | </b> <b>{download.message.from_user.first_name}</b>"
-                msg += f"\n<b>├ Warn: </b> <code>/warn {download.message.from_user.id}</code>"
                 try:
                     msg += f"\n<b>├ Seeders:</b> {download.aria_download().num_seeders}" \
                            f" | <b> Peers:</b> {download.aria_download().connections}"
