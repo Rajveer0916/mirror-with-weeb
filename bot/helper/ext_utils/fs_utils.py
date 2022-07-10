@@ -145,7 +145,7 @@ def split_file(path, size, file_, dirpath, split_size, start_time=0, i=1, inLoop
                 osremove(out_path)
                 return split_file(path, size, file_, dirpath, split_size, start_time, i, True)
             lpd = get_media_info(out_path)[0]
-            if lpd <= 4
+            if lpd <= 4:
                 osremove(out_path)
                 break
             start_time += lpd - 3
