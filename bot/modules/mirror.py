@@ -59,7 +59,7 @@ class MirrorListener:
             Interval[0].cancel()
             del Interval[0]
             delete_all_messages()
-        except :
+        except:
             pass
 
     def onDownloadStart(self):
@@ -307,7 +307,6 @@ def _mirror(bot, message, isZip=False, extract=False, isQbit=False, isLeech=Fals
             if link.isdigit():
                 multi = int(link)
                 link = ''
-        elif link.startswith(("|", "pswd:")):
             elif link.startswith(("|", "pswd:")):
                 link = ''
         else:
