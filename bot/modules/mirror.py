@@ -308,6 +308,7 @@ def _mirror(bot, message, isZip=False, extract=False, isQbit=False, isLeech=Fals
                 multi = int(link)
                 link = ''
         elif link.startswith(("|", "pswd:")):
+            elif link.startswith(("|", "pswd:")):
                 link = ''
         else:
             link = ''
