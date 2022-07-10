@@ -310,7 +310,6 @@ def _mirror(bot, message, isZip=False, extract=False, isQbit=False, isLeech=Fals
         elif link.startswith(("|", "pswd:")):
                 link = ''
         else:
-        if link.startswith(("|", "pswd:")):
             link = ''
     else:
         link = ''
