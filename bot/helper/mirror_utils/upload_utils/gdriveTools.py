@@ -847,7 +847,7 @@ class GoogleDriveHelper:
                 break
 
     @retry(wait=wait_exponential(multiplier=2, min=3, max=6), stop=stop_after_attempt(3),
-           retry=(retry_if_exception_type(GCError() | retry_if_exception_type(IOError)))
+           retry=(retry_if_exception_type(GCError)) | retry_if_exception_type(IOError)))
     def __download_file(self, file_id, path, filename, mime_type):
         request = self.__service.files().get_media(fileId=file_id)
         filename = filename.replace('/', '')
