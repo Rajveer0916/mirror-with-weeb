@@ -214,4 +214,3 @@ class QbDownloader:
             self.client.torrents_pause(torrent_hashes=self.ext_hash)
         else:
             self.__onDownloadError('Download stopped by user!')
-a
