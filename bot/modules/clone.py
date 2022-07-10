@@ -31,7 +31,6 @@ def _clone(message, bot, multi=0):
     if reply_to:
         if len(link) == 0:
             link = reply_to.text.split(maxsplit=1)[0].strip()
-            link = reply_to.text.split(maxsplit=1)[0].strip()
         if reply_to.from_user.username:
             tag = f"@{reply_to.from_user.username}"
         else:
