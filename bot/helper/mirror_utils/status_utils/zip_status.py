@@ -58,10 +58,11 @@ class ZipStatus:
     def download(self):
         return self
 
-    def eng(self):
-        return EngineStatus.STATUS_ZIP
 
     def cancel_download(self):
         LOGGER.info(f'Cancelling Archive: {self.__name}')
         self.__listener.arch_proc.kill()
         self.__listener.onUploadError('archiving stopped by user!')
+
+    def eng(self):
+        return EngineStatus.STATUS_ZIP
