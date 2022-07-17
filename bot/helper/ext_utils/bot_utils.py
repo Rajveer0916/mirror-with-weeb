@@ -182,7 +182,6 @@ def get_readable_message():
                            f" | <b> Leechers:</b> {download.torrent_info().num_leechs}"
                 except:
                     pass
-                msg += f"\n<b>_____________________________________</b>"
             
             elif download.status() == MirrorStatus.STATUS_SEEDING:
                 msg += f"\n<b>├ Size: </b>{download.size()}"
