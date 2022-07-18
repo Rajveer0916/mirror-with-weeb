@@ -1,4 +1,4 @@
-from re import match as re_match, findall as re_findall
+from re import findall as re_findall
 from threading import Thread, Event
 from time import time
 from math import ceil
@@ -346,7 +346,6 @@ def get_content_type(link: str) -> str:
         except:
             content_type = None
     return content_type
-
 
 ONE, TWO, THREE = range(3)
 def pop_up_stats(update, context):
