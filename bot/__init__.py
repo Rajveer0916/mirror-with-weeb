@@ -172,7 +172,6 @@ except:
     log.error("One or more env variables missing! Exiting now")
     exit(1)
 
-LOGGER.info("Generating SESSION_STRING")
 try:
     IS_PREMIUM_USER = False
     USER_SESSION_STRING = getConfig('USER_SESSION_STRING')
