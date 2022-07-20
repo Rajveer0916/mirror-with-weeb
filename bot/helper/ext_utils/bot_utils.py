@@ -51,7 +51,7 @@ class EngineStatus:
     STATUS_SPLIT = "<b>FFmpeg v2.9.1</b>"
     STATUS_ZIP = "<b>p7zip v16.02</b>"
 
-# PROGRESS_MAX_SIZE = 100 // 9
+PROGRESS_MAX_SIZE = 100 // 9
 PROGRESS_INCOMPLETE = ['◔', '◔', '◑', '◑', '◑', '◕', '◕']
 # PROGRESS_INCOMPLETE = ['◌', '◌', '◎', '◎', '◎', '◍', '◍', '◍']
     
