@@ -295,7 +295,7 @@ help_string_telegraph_user = f'''
 <br><br>
 • <b>/{BotCommands.SpeedCommand}</b>: Speedtest of Heroku server
 <br><br>
-• <b>/weebhelp</b>: Okatu helper
+• <b>/ajayhelp</b>: Okatu helper
 '''
 
 help_user = telegraph.create_page(
