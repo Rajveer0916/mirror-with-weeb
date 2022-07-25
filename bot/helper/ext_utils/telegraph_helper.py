@@ -72,10 +72,10 @@ class TelegraphHelper:
                     nxt_page += 1
             self.edit_page(
                 path = path[prev_page],
-                title = 'Mirror-with-weeb Torrent Search',
+                title = 'Ajay-Mirror Torrent Search',
                 content=content
             )
         return
 
 
-telegraph=TelegraphHelper('Mirror-with-weeb', 'https://github.com/codewithweeb/mirror-with-weeb')
+telegraph=TelegraphHelper('Ajay-Mirror', '')
