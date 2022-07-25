@@ -44,7 +44,7 @@ SITES = {
     "all": "All"
 }
 
-TELEGRAPH_LIMIT = 300
+TELEGRAPH_LIMIT = 9999999
 
 
 def torser(update, context):
