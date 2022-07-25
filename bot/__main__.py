@@ -317,7 +317,7 @@ help_string_telegraph_admin = f'''
 <br><br>
 • <b>/{BotCommands.RmSudoCommand}</b>: Remove sudo users (Only Owner)
 <br><br>
-• <b>/{BotCommands.RestartCommand}</b>: Restart and update the bot
+• <b>/{BotCommands.RestartCommand}</b>: Restart and update the bot. kill dyno: /restart k do dyno restart: /restart d
 <br><br>
 • <b>/{BotCommands.LogCommand}</b>: Get a log file of the bot. Handy for getting crash reports
 '''
