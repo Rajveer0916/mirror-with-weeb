@@ -439,13 +439,13 @@ def bot_sys_stats():
     recv = get_readable_file_size(psutil.net_io_counters().bytes_recv)
     sent = get_readable_file_size(psutil.net_io_counters().bytes_sent)
     stats = "Bot Statistics"
-
     stats += f"""
+
 Bot Uptime: {currentTime}
 T-DN: {recv} | T-UP: {sent}
 CPU: {cpu}% | RAM: {mem}%
 Disk: {total} | Free: {free}
-Used: [{disk}%] is {used}
+Used: {used} [{disk}%]
 
 Made with ❤️ by Ajay
 """
