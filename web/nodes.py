@@ -4,7 +4,7 @@
 from anytree import NodeMixin
 
 class TorNode(NodeMixin):
-    def __init__(self, name, is_folder=False, is_file=False, parent=None, progress=None, size=None, priority=None, file_id=None):
+    def __init__(self, name, is_folder=False, is_file=False, parent=None, size=None, priority=None, file_id=None):
         super().__init__()
         self.name = name
         self.is_folder = is_folder
